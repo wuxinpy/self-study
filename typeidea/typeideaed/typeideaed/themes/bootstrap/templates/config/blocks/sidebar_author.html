@@ -1,0 +1,7 @@
+<ul>
+  {% for author in authors %}
+  <li>
+    <a href="{% url 'blog:author' author.id %}">{{ author.username }}</a>
+  </li>
+  {% endfor %}
+</ul>
