@@ -76,6 +76,8 @@ class PostAdmin(BaseOwnerAdmin):
             'fields': (
                 'desc',
                 'content',
+                # 'content_ck',
+                # 'content_md',
             ),
         }),
         ('额外信息', {
@@ -83,6 +85,7 @@ class PostAdmin(BaseOwnerAdmin):
             'fields': ('tag',),
         }),
     )
+
 
     filter_horizontal = ('tag',)
 

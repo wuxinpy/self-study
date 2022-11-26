@@ -15,6 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+
+from .autocomplete import CategoryAutocomplete, TagAutocomplete
 
 from .custom_site import custom_site
 
@@ -25,4 +29,10 @@ urlpatterns = [
     path('', include('blog.urls')),
     path('', include('config.urls')),
     path('', include('comment.urls')),
-]
+
+    path('category-autocomplete/', CategoryAutocomplete.as_view(), name='category-complete'),
+    path('tag-autocomplete/', TagAutocomplete.as_view(), name='tag-complete'),
+
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

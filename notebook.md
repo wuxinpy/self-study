@@ -59,3 +59,8 @@ html 中 name value value 是name 的值
 
 区分用户：根据IP 浏览器类型生成MD5标记用户、系统生成唯一ID，放入cookie中、用户登陆
 
+# 第十章 第三方插件
+
+后台管理框架 simpleui
+
+性能优化 django-autocomplete-light, 配置方式,处理数据,添加路由,添加form字段

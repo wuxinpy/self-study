@@ -57,3 +57,4 @@
 # print(log_entries)
 
 # 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
+# https://github.com/wuxinpy/self-study
