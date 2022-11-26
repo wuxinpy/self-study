@@ -64,3 +64,19 @@ html 中 name value value 是name 的值
 后台管理框架 simpleui
 
 性能优化 django-autocomplete-light, 配置方式,处理数据,添加路由,添加form字段
+
+
+# 第十一章 django-rest-framework
+
+RESTful API: 把请求的实体当作资源,通过HTTP自带的方法(GET, POST, PUT, DELETE)进行
+增删改查的操作.
+
+ListCreateAPIView、RetrieveAPIView、viewsets
+
+报错：'AutoSchema' object has no attribute 'get_link'
+coreapi 被弃用了
+
+另外使用 pip install -U drf-yasg
+网址： https://github.com/axnsan12/drf-yasg#quickstart
+
+分页方式： LimitOffsetPagination、PageNumberPagination、CursorPagination
