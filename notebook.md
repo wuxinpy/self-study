@@ -93,3 +93,9 @@ DEBUG = False 后， 设置：
 re_path('static/(?P<path>.*)', serve, {'document_root':settings.STATIC_ROOT})
 STATIC_ROOT
 
+# 第十四章 标准化打包和自动化部署
+
+pypi-server run -p <port> /home/name/packages
+
+setup 进行打包
+使用twine 注册上传包
