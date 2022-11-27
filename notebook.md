@@ -80,3 +80,16 @@ coreapi 被弃用了
 网址： https://github.com/axnsan12/drf-yasg#quickstart
 
 分页方式： LimitOffsetPagination、PageNumberPagination、CursorPagination
+
+# 第十二章 调试和优化
+debug_toolbar 和 silk 以及 pdb大法
+
+# 第十三章  mysql 和缓存
+pymysql
+
+缓存： 缓和较慢存储的高频词请求，加速慢存储的访问效率
+
+DEBUG = False 后， 设置：
+re_path('static/(?P<path>.*)', serve, {'document_root':settings.STATIC_ROOT})
+STATIC_ROOT
+
